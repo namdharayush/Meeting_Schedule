@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '../style/Scheduled_Submit.css'
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
@@ -9,12 +9,19 @@ import { FcGoogle } from "react-icons/fc";
 import { BsMicrosoft } from "react-icons/bs";
 
 function Scheduled_Submit({ formName, Selected_time }) {
+
+    const avatarName = formName && formName.split(' ').join('-')
+
+    const [avatar , setAvatarName] = useState('')
+
+    const CUSTOM_URL = `https://ui-avatars.com/api/?name=${avatarName}&background=000000&color=ffffff&bold=true&rounded=true`
+
     return (
         <Fragment>
             <div className='sch_box'>
                 <div>
                     <div className='sch_img'>
-                        <img src="https://d3v0px0pttie1i.cloudfront.net/uploads/branding/logo/b53f6730-9e93-409b-92ef-6a1000e8480e/a37e1896.png" alt="Image Not Found" />
+                        <img src={CUSTOM_URL} alt="Image Not Found" />
                     </div>
                     <div className='text-center'>
                         <h3 ><IoCheckmarkDoneCircle style={{ color: 'green' }} /> You are Scheduled</h3>
