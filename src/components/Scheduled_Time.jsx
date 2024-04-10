@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../style/Scheduled_Time.css'
 
 
 const SCHEDULED_TIME = ['1:30pm - 2:15pm', '2:00pm - 2:45pm', '6:30pm - 7:15pm', '8:00pm - 8:45pm', '8:30pm - 9:15pm', '9:00pm - 9:45pm', '9:30pm - 10:15pm']

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Calendar from 'react-calendar';
-import '../style/HomePage.css'
+import '../style/HomePage.css';
+import '../style/Calender.css'
 import 'react-calendar/dist/Calendar.css';
 import Scheduled_Time from './Scheduled_Time';
 import FormDetails from './FormDetails';

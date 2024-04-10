@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import '../style/Scheduled_Submit.css'
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineCalendarToday } from 'react-icons/md';

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import '../style/FormDetails.css'
 
 function FormDetails({handleSubmit}) {
 
