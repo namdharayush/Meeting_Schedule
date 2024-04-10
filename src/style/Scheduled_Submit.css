@@ -1,6 +1,6 @@
 .shceduled_container {
     height: 600px;
-    overflow-y: scroll !important;
+    overflow-y: auto !important;
 }
 
 .shceduled_container .sch_box {
