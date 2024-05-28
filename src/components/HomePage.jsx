@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 import '../style/HomePage.css';
 import '../style/Calender.css'
 import 'react-calendar/dist/Calendar.css';
+import {NavLink} from 'react-router-dom'
 import Scheduled_Time from './Scheduled_Time';
 import FormDetails from './FormDetails';
 import { MdAccessTime, MdOutlineCalendarToday } from 'react-icons/md';
@@ -78,6 +79,7 @@ function HomePage() {
                         }
 
                         <p className='meeting_book_text '>Book a meeting with a product expert. We've helped hundreds of companies overcome product management challenges.</p>
+                        <NavLink to='/design'><button className='btn btn-primary' >Click Here</button></NavLink>
                     </div>
                 </div>
                 <div style={{ display: fetchtime ? 'none' : '' }} className={`${isDateClick ? 'col-lg-8' : 'col-lg-6'} pt-3 pb-3`}>
@@ -116,6 +118,7 @@ function HomePage() {
                 <Scheduled_Submit Selected_time = {SELECTED_TIME} formName = {formName} />
             </div>
         </div >
+
     )
 }
 
