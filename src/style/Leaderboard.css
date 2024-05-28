@@ -1,0 +1,95 @@
+.leader_board{
+    width: 100%;
+    height: max-content;
+    padding: 50px 0;
+    background-color: white;
+    /* overflow-y: hidden; */
+}
+.leader_board h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 750;
+    font-size:35px;
+}
+.leader_board .box_content{
+    width: 100%;
+    height: max-content;
+    padding: 0px 15px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.147) ; */
+}
+.leader_board .box_content .box_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.245); */
+    align-items: center;
+}
+.leader_board .box_content .right_con{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgba(2, 2, 2, 0.177);
+    box-sizing: border-box;
+}
+.leader_board .box_content .right_con button{
+    padding: 5px 10px;
+    border: none;
+    border-right: 2px solid rgba(0, 0, 0, 0.148);
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    font-weight: 490;
+    height: 100%;
+}
+.leader_board .box_content .right_con select{
+    border:none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0;
+}
+.leader_board .box_content .right_con select:focus{
+    border: none;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+table td:first-child, table th:first-child{
+    border-radius: 10px 0 0 10px;
+}
+table td:last-child, table thead th:last-child{
+    border-radius: 0 10px 10px 0;
+}
+table tr,td,th{
+    padding: 10px 10px;
+}
+table thead tr{
+    background-color: #ce34bf;
+    color: white;
+}
+table tbody tr:hover{
+    background-color:rgba(218, 218, 218, 0.236);
+}
+table tbody button{
+    background-color: rgb(19, 143, 19);
+    padding: 7px 20px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 650;
+}
+table tbody button:hover{
+    background-color: #ce34bf;
+    transition: all 0.2s linear;
+}
+table .icon{
+    font-size: 20px;
+    color: rgb(17, 211, 17);
+}
